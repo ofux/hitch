@@ -97,7 +97,7 @@ func (h *Hitch) Handler() http.Handler {
 }
 
 // Params returns the httprouter.Params for req.
-// This is just a passthrough to httprouter.ParamsFromContext.
+// This is just a pass-through to httprouter.ParamsFromContext.
 func Params(req *http.Request) httprouter.Params {
 	return httprouter.ParamsFromContext(req.Context())
 }
